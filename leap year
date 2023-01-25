@@ -1,0 +1,15 @@
+year=eval(input("enter the year:"))
+if year <=0 or year == float:
+    print("invalid")
+if year%400==0:
+    isleapyear=True
+elif year%100==0:
+    isleapyear=False
+elif year%4==0:
+    isleapyear=True
+else:
+    isleapyear=False
+if isleapyear:
+    print(year,"is a leap year.")
+else:
+    print(year,"is not a leap year.")
